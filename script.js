@@ -5,11 +5,11 @@ function loadQuote(){
     .then(res => displayQuote(res))
 }
 
-function displayQuote(text){
+function displayQuote(quote){
     const display = document.getElementById('display');
     // const quote = text
-    display.innerText = text.quote;
-    display.classList.add('display')
+    display.innerText = quote.quote;
+    // display.classList.add('display')
     console.log(text);
 }
 
